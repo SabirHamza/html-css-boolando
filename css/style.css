@@ -6,6 +6,10 @@
 
 header{
     background-color: orange;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    width: 100%;
 }
 
 .gender{
@@ -62,6 +66,18 @@ div :first-child{
     width: 100%;
 }
 
+.hover{
+    display: none;
+}
+
+.row > div:hover .default{
+    display: none;
+}
+
+.row > div:hover .hover{
+    display: block;
+}
+
 span{
     position: absolute;
 }
@@ -83,6 +99,22 @@ span{
     bottom: 100px;
     background-color: red;
     padding: 5px 10px;
+}
+
+.green{
+    color: white;
+    background-color: green;
+    padding: 5px;
+    left: 60px;
+    bottom: 100px;
+}
+
+.green-alone{
+    color: white;
+    background-color: green;
+    padding: 5px;
+    left: 0;
+    bottom: 100px;
 }
 
 .price, .old-price{
