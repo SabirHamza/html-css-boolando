@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    background-color: orange;
+}
+
+.gender{
+    display: flex;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+    padding: .5rem;
+
+    display: flex;
+}
+
+.container > div{
+    min-width: 200px;
+}
+
+div :first-child{
+    vertical-align: middle;
+}
+
+.logo{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo > img{
+    height: 30px;
+}
+
+.row{
+    display: flex;
+    padding: 0 -1rem;
+}
+
+.row > div{
+    width: calc(100% / 3);
+    margin: 1rem;
+    position: relative;
+}
+
+.row > div > img{
+    width: 100%;
+}
+
+span{
+    position: absolute;
+}
+
+.heart{
+    right: 0;
+    top: 10px;
+    padding: 5px 10px;
+    font-size: 2rem;
+    background-color: white;
+}
+
+.heart:hover{
+    color: red;
+}
+
+.discount{
+    left: 0;
+    bottom: 100px;
+    background-color: red;
+    padding: 5px 10px;
+}
+
+.price, .old-price{
+    display: inline-block;
+}
+
+.price{
+    color: red;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
